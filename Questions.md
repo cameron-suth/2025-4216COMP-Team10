@@ -1,4 +1,4 @@
-Does danceability increase popularity of a song? - Aaron
+Does tempo affect the energy of a song? - Aaron
 
 Does type of genre increase popularity of a song?
 
@@ -17,3 +17,5 @@ Does a longer song affect the chance it being played live?
 Is a higher energy song more likely to be played live?
 
 Does an icrease in valence equate to an increase in dancability?
+
+Based on the most popular song which genre is the most popular? - Reece
