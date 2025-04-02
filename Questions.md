@@ -1,4 +1,4 @@
-Does danceability increase popularity of a song?
+Does danceability increase popularity of a song? - Aaron
 
 Does type of genre increase popularity of a song?
 
@@ -6,7 +6,7 @@ Are some older songs still popular today? - Harry
 
 Were certain genres more popular at certain times?
 
-Are longer songs more popular?
+Are longer songs more popular? - Aaron
 
 Are certain artists more prone to releasing popular songs? - Harry
 
