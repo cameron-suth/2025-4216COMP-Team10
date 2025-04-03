@@ -8,7 +8,7 @@ Were certain genres more popular at certain times?
 
 Are longer songs more popular? - Aaron
 
-Are certain artists more prone to releasing popular songs? - Harry
+Which artists have released the most popular songs? - Harry
 
 Does a higher energy song make it more dancable? Cam
 
