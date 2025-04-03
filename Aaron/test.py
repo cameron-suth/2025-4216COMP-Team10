@@ -2,28 +2,27 @@ import matplotlib.pyplot as plt
 import pandas as pd 
 
 excel = pd.read_csv("Spotify_dataset.csv")
-table_energy = excel.energy
-table_tempo = excel.tempo
 table_popular = excel.track_popularity
 table_time = excel.time_signature
-table_year = excel.
+table_year = excel.track_album_release_year
+table_danceability = excel.danceability
 
-def energy_tempo():
-    fig, ax = plt.subplots(figsize = (20, 20), facecolor = "pink")
-    ax.barh(table_tempo, table_energy)
-    plt.xlabel("Energy")
-    plt.ylabel("Tempo")
+def year_dance():
+    fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
+    ax.bar(table_year, table_danceability)
+    plt.xlabel("Release Year")
+    plt.ylabel("Danceability")
 
 def time_pop():
-    fig, ax = plt.subplots(figsize = (20,20), facecolor = "pink")
-    ax.barh(table_time, table_popular)
-    plt.xlabel("Popularity")
-    plt.ylabel("Time Signature")
+    fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
+    ax.bar(table_time, table_popular)
+    plt.xlabel("Time Signature")
+    plt.ylabel("Popularity")
 
 while True:
     # User Interaction
     print("Menu")
-    print("1. Does tempo affect the energy of a song?")
+    print("1. Does danceability increase over the year?")
     print("2. Does the time signature affect how popular the song is?")
     print("3. View both")
     print("Q. Quit Program")
@@ -31,8 +30,8 @@ while True:
     
     match userInput:
         case '1':
-            print("You have selected:\nDoes Tempo affect the Energy of a song?")
-            energy_tempo()
+            print("You have selected:\nDoes Danceability increase over the years?")
+            year_dance()
             plt.show()
         case '2':
             print("You have selected:\nDoes Time Signatures affect the Popularity of a song?")
@@ -40,7 +39,7 @@ while True:
             plt.show()
         case '3':
             print("You have selected:\nView Both")
-            energy_tempo()
+            year_dance()
             time_pop()
             plt.show()
         case 'Q':
