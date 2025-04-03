@@ -10,4 +10,11 @@ def question1():
     plt.ylabel("Genre")
     plt.xlabel("Popularity")
     plt.show()
-question1()
+#question1()
+def question2():
+    column1 = excel.valence
+    column2 = excel.danceability
+    fig, ax = plt.subplots(figsize=(8, 6), layout="constrained", facecolor="pink")
+    ax.scatter(column1, column2)
+    plt.show()
+question2()
