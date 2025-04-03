@@ -28,7 +28,10 @@ while True:
             from Reece import 
         case '5':
             print("You have chosen Josh")
-            from Josh import 
+            from JoshM import 
+        case '6':
+            print("")
+            from JoshA import
         case 'Q':
             print("Quit Program")
             break
