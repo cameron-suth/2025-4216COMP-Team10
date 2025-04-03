@@ -1,8 +1,28 @@
 import matplotlib.pyplot as plt
-import numpy as np
+import pandas as pd
 
-xpoints = np.array([0, 6])
-ypoints = np.array([0, 250])
+data = pd.read_csv("C:\Users\csmhkers\OneDrive - Liverpool John Moores University\4216 COMP\python\2025-4216COMP-Team10\Spotify_dataset.csv")
+while True:
 
-plt.plot(xpoints, ypoints)
-plt.show()
+    print("which question would you like?")
+    print("1. Are some oldersongs still popular today?")
+    print("2. Are certain atists more prone to releasing more popular songs?")
+    print("Q. Return to previous menu.")
+    Ans = input("Answer: ")
+
+    match Ans:
+        case '1':
+            oldSongs()
+        case '2':
+            artPop()
+        case 'Q':
+            break
+        case _:
+            print("enter something appropriate.")
+
+    def oldSongs():
+        data.
+
+
+    def artPop():
+        data.
