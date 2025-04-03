@@ -16,6 +16,6 @@ Does a longer song affect the chance it being played live?
 
 Is a higher energy song more likely to be played live?
 
-Does an icrease in valence equate to an increase in dancability?
+Does an icrease in valence equate to an increase in dancability? - Reece
 
 based off the most popular songs, which genre is the most popular? - Reece
