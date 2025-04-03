@@ -1,6 +1,6 @@
 Does tempo affect the energy of a song? - Aaron
 
-Does type of genre increase popularity of a song?
+Does type of genre increase popularity of a song? Cam
 
 Are some older songs still popular today? - Harry
 
@@ -10,7 +10,7 @@ Are longer songs more popular? - Aaron
 
 Are certain artists more prone to releasing popular songs? - Harry
 
-Does a higher energy song make it more dancable?
+Does a higher energy song make it more dancable? Cam
 
 Does a longer song affect the chance it being played live?
 
