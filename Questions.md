@@ -6,7 +6,7 @@ Are some older songs still popular today? - Harry
 
 Were certain genres more popular at certain times?
 
-Are longer songs more popular? - Aaron
+Do Time Signatures affect the Popularity of a song? - Aaron
 
 Are certain artists more prone to releasing popular songs? - Harry
 
