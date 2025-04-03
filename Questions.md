@@ -8,7 +8,7 @@ Were certain genres more popular at certain times?
 
 Do Time Signatures affect the Popularity of a song? - Aaron
 
-Are certain artists more prone to releasing popular songs? - Harry
+Which artists have released the most popular songs? - Harry
 
 Does a higher energy song make it more dancable? Cam
 
@@ -16,6 +16,6 @@ Does a longer song affect the chance it being played live?
 
 Is a higher energy song more likely to be played live?
 
-Does an icrease in valence equate to an increase in dancability?
+Does an icrease in valence equate to an increase in dancability? - Reece
 
 based off the most popular songs, which genre is the most popular? - Reece
