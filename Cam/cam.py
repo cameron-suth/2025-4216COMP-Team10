@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd 
 
-excel = pd.read_csv("M:\\2025-4216COMP-Team10\\2025-4216COMP-Team10\\Spotify_dataset.csv")
+excel = pd.read_csv("Spotify_dataset.csv")
 
 
 def q1():
