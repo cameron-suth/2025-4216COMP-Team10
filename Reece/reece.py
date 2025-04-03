@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-excel = pd.read_csv("M:\\CSW\\2025-4216COMP-Team10\\Spotify_dataset.csv")
+excel = pd.read_csv("Spotify_dataset.csv")
 def question1():
     column1 = excel.playlist_genre
     column2 = excel.track_popularity
@@ -17,11 +17,11 @@ def question2():
     fig, ax = plt.subplots(figsize=(8, 6), layout="constrained", facecolor="pink")
     ax.scatter(column1, column2)
     plt.title("Does an icrease in valence equate to an increase in dancability?")
-    #ax.plot([0,1],[0,1], color="Red")
+    #ax.plot([0,1],[0,1], color="Red") 
     plt.xlabel("Valence")
     plt.ylabel("Danceability")
-userInput = input("\nEnter the menu number for the visuallisation/records you want to view\n\n1) based off the Genres most popular Song, which Genre is the most Popular?\n2) Does an icrease in valence equate to an increase in dancability?\n3) View Both\n\nInput: ")
-def main():
+while True:
+    userInput = input("\nEnter the menu number for the visuallisation/records you want to view\n\n1) based off the Genres most popular Song, which Genre is the most Popular?\n2) Does an icrease in valence equate to an increase in dancability?\n3) View Both\nQ) Exit Section\n\nInput: ")
     match userInput:
         case '1':
             question1()
@@ -33,4 +33,9 @@ def main():
             question1()
             question2()
             plt.show()
-main()
+        case 'Q':
+            print("Exit Section!")
+            break
+        case _:
+            print("invalid input")
+
