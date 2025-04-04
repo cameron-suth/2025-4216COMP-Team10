@@ -1,5 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
+
 excel = pd.read_csv("Spotify_dataset.csv")
 def question1():
     column1 = excel.playlist_genre
@@ -10,16 +12,17 @@ def question1():
     plt.ylabel("Genre")
     plt.xlabel("Popularity")
 
-#question1()
 def question2():
     column1 = excel.valence
     column2 = excel.danceability
     fig, ax = plt.subplots(figsize=(8, 6), layout="constrained", facecolor="pink")
-    ax.scatter(column1, column2)
-    plt.title("Does an icrease in valence equate to an increase in dancability?")
-    #ax.plot([0,1],[0,1], color="Red") 
+    ax.scatter(column1, column2, alpha=0.5)
+    plt.title("Does an increase in Valence equate to an increase in Danceability?")
+    a, b = np.polyfit(excel.valence, excel.danceability, deg=1)
+    plt.plot(excel.valence, a * excel.valence + b, color="red")
     plt.xlabel("Valence")
     plt.ylabel("Danceability")
+    
 while True:
     userInput = input("\nEnter the menu number for the visuallisation/records you want to view\n\n1) based off the Genres most popular Song, which Genre is the most Popular?\n2) Does an icrease in valence equate to an increase in dancability?\n3) View Both\nQ) Exit Section\n\nInput: ")
     match userInput:
