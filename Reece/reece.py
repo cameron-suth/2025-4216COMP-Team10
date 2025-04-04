@@ -24,7 +24,12 @@ def question2():
     plt.ylabel("Danceability")
     
 while True:
-    userInput = input("\nEnter the menu number for the visuallisation/records you want to view\n\n1) based off the Genres most popular Song, which Genre is the most Popular?\n2) Does an icrease in valence equate to an increase in dancability?\n3) View Both\nQ) Exit Section\n\nInput: ")
+    print("\nEnter the menu number for the visuallisation/records you want to view:\n")
+    print("1) based off the Genres most popular Song, which Genre is the most Popular?")
+    print("2) Does an icrease in valence equate to an increase in dancability?")
+    print("3) View Both")
+    print("Q) Exit Section\n\n")
+    userInput = input("Input: ")
     match userInput:
         case '1':
             question1()
