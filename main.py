@@ -30,8 +30,8 @@ while True:
             print("You have chosen Josh")
             from JoshM import josh
         case '6':
-            print("")
-            from JoshA import
+            print("You have chosen Josh A")
+            from JoshA import joshA
         case 'Q':
             print("Quit Program")
             break
