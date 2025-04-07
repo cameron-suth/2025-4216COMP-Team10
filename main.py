@@ -10,6 +10,7 @@ while True:
     print("3. Harry")
     print("4. Reece")
     print("5. Josh")
+    print("6. Josh A")
     print("Q. Quit Program")
     userInput = input("Enter the menu number for the visuallisation/records you want to view\nInput: ")
     
