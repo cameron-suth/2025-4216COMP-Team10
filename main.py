@@ -22,13 +22,13 @@ while True:
             from Aaron import Aaron
         case '3':
             print("You have chosen Harry")
-           from Harry import 
+            from Harry import 
         case '4':
             print("You have chosen Reece")
             from Reece import reece
         case '5':
             print("You have chosen Josh")
-            from JoshM import 
+            from JoshM import josh
         case '6':
             print("")
             from JoshA import

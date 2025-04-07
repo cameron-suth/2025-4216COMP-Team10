@@ -12,9 +12,9 @@ Which artists have released the most popular songs? - Harry
 
 Does a higher energy song make it more dancable? Cam
 
-Does a longer song affect the chance it being played live?
+Does a longer song affect the chance it being played live? - Josh
 
-Is a higher energy song more likely to be played live?
+Is a higher energy song more likely to be played live? - Josh
 
 Does an icrease in valence equate to an increase in dancability? - Reece
 
