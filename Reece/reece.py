@@ -4,8 +4,9 @@ import numpy as np
 
 excel = pd.read_csv("Spotify_dataset.csv")
 def question1():
-    column1 = excel.playlist_genre
-    column2 = excel.track_popularity
+    df = excel.sort_values(by='track_popularity', ascending=False) 
+    column1 = df.playlist_genre
+    column2 = df.track_popularity
     fig, ax = plt.subplots(figsize=(8, 6), layout="constrained", facecolor="pink")
     ax.barh(column1, column2)
     plt.title("based off the Genres most popular Song, which Genre is the most Popular?")

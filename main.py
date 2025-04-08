@@ -10,6 +10,7 @@ while True:
     print("3. Harry")
     print("4. Reece")
     print("5. Josh")
+    print("6. Josh A")
     print("Q. Quit Program")
     userInput = input("Enter the menu number for the visuallisation/records you want to view\nInput: ")
     
@@ -22,7 +23,7 @@ while True:
             from Aaron import Aaron
         case '3':
             print("You have chosen Harry")
-            from Harry import 
+            from Harry import Harry
         case '4':
             print("You have chosen Reece")
             from Reece import reece
@@ -30,8 +31,8 @@ while True:
             print("You have chosen Josh")
             from JoshM import josh
         case '6':
-            print("")
-            from JoshA import
+            print("You have chosen Josh A")
+            from JoshA import joshA
         case 'Q':
             print("Quit Program")
             break

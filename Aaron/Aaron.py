@@ -10,20 +10,21 @@ table_danceability = excel.danceability
 def year_dance():
     fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
     ax.bar(table_year, table_danceability)
+    plt.title("Does Danceability increase over the years?")
     plt.xlabel("Release Year")
     plt.ylabel("Danceability")
 
 def time_pop():
     fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
     ax.bar(table_time, table_popular)
+    plt.title("Are certain time signatures more prominent in popular songs?")
     plt.xlabel("Time Signature")
     plt.ylabel("Popularity")
 
 while True:
-    # User Interaction
     print("Menu")
     print("1. Does danceability increase over the year?")
-    print("2. Does the time signature affect how popular the song is?")
+    print("2. Are certain time signatures more prominent in popular songs?")
     print("3. View both")
     print("Q. Quit Program")
     userInput = input("Enter the menu number for the visuallisation/records you want to view\nInput: ")
@@ -34,7 +35,7 @@ while True:
             year_dance()
             plt.show()
         case '2':
-            print("You have selected:\nDoes Time Signatures affect the Popularity of a song?")
+            print("You have selected:\nAre certain time signatures more prominent in popular songs?")
             time_pop()
             plt.show()
         case '3':
