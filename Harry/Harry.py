@@ -5,40 +5,46 @@ import pandas as pd
 data = pd.read_csv("Spotify_dataset.csv")
 #while loop to keep the code running for as long as the user wants
 while True:
-
+#Display another menu for the user so they can decide what they want to see
     print("which question would you like?")
-    print("1. Which genre is the most popular?")
-    print("2. Which artist has released the most popular songs?")
+    print("1. Does energy have any correlation with loudness?")
+    print("2. Which genre has the most amount of lyrics?")
     print("Q. Return to previous menu.")
     Ans = input("Answer: ")
 
-#oldSongs is a function that would record all the dates, artist names,song names and popularity of each song into an array
-#so that it can reference it when needed to make the graph by sowing the oldest songs and their respective popularity.
 
-    def oldSongs():
-        playlistGenre = data.playlist_genre
-        popularity = data.track_popularity
-        releaseYear = data.track_album_release_year
+    def enLoud():
+        Energy = data.energy
+        Loudness = data.loudness
         
-        fig, ax = plt.subplots(subplot_kw=dict(projection='3d'))
-        ax.stem(playlistGenre, popularity, releaseYear)
-        ax.set(xlabel="Playlsit Genre", ylabel="popularity", zlabel="release year")
+        fig, ax = plt.subplots()
+        ax.stackplot(Energy, Loudness)
+        ax.set(xlabel="Energy", ylabel="Loudness")
+        plt.title("Does energy have any correlation with loudness?")
 
+        plt.show()
+
+    def genSpeech():
+        genre = data.playlist_genre
+        speechiness = data.speechiness
+
+        fig, ax = plt.subplots()
+        ax.barh(genre, speechiness)
+        ax.set(xlabel="Genre", ylabel="Speechiness")
+        plt.title("Which genre has the most amount of lyrics?")
 
         plt.show()
 
 
-
-    def artPop():
-        artist = data.track_artist
-        popularity = data.track_popularity
-
     match Ans:
         case '1':
-            oldSongs()
+            enLoud()
+            print("You have selected does energy have any correlation with loudness?")
         case '2':
-            artPop()
+            genSpeech()
+            print("You have selected Which genre has the most amount of lyrics?")
         case 'Q':
+            print("You have selected to return to the main menu.")
             break
         case _:
             print("enter something appropriate.")

@@ -6,9 +6,9 @@ Has popularity increased over time? - Cam
 
 Has tempo increased over time? - Cam
 
-Were certain genres more popular at certain times? - Harry
+Does energy have any correlation with loudness? - Harry
 
-Which artists have released the most popular songs? - Harry
+Which genre has the most amount of lyrics? - Harry
 
 Does a longer song affect the chance it being played live? - Josh
 
