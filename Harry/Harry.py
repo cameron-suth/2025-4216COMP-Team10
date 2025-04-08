@@ -17,8 +17,8 @@ while True:
         Energy = data.energy
         Loudness = data.loudness
         
-        fig, ax = plt.subplots()
-        ax.stackplot(Energy, Loudness)
+        fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
+        ax.scatter(Energy, Loudness)
         ax.set(xlabel="Energy", ylabel="Loudness")
         plt.title("Does energy have any correlation with loudness?")
 
@@ -28,7 +28,7 @@ while True:
         genre = data.playlist_genre
         speechiness = data.speechiness
 
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
         ax.barh(genre, speechiness)
         ax.set(xlabel="Genre", ylabel="Speechiness")
         plt.title("Which genre has the most amount of lyrics?")
