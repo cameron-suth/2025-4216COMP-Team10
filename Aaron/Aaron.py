@@ -44,7 +44,7 @@ while True:
             time_pop()
             plt.show()
         case 'Q':
-            print("Quit Program")
+            print("Return to Main Menu")
             break
         case _:
             print("Invalid Input. Try again")
