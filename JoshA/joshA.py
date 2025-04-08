@@ -42,7 +42,7 @@ def speechyPop():
 userAns = ""
 #This creates a loop that will run through the menu until an option is chosen
 while userAns !="3":
-   print("1: Does the song being acoustic impact the popularity of the song?")
+    print("1: Does the song being acoustic impact the popularity of the song?")
     print("2: Does speechiness increase song popularity?")
     print("3: Exit the program")
     #This prompts the user to input their choice and store it as the variable created earlier
