@@ -7,15 +7,17 @@ table_time = excel.time_signature
 table_year = excel.track_album_release_year
 table_danceability = excel.danceability
 
-def year_dance():
+def q1():
     fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
     ax.bar(table_year, table_danceability)
+    plt.title("Does Danceability increase over the years?")
     plt.xlabel("Release Year")
     plt.ylabel("Danceability")
 
-def time_pop():
+def q2():
     fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
     ax.bar(table_time, table_popular)
+    plt.title("Are certain time signatures more prominent in popular songs?")
     plt.xlabel("Time Signature")
     plt.ylabel("Popularity")
 
@@ -23,7 +25,7 @@ while True:
     # User Interaction
     print("Menu")
     print("1. Does danceability increase over the year?")
-    print("2. Does the time signature affect how popular the song is?")
+    print("2. Are certain time signatures more prominent in popular songs?")
     print("3. View both")
     print("Q. Quit Program")
     userInput = input("Enter the menu number for the visuallisation/records you want to view\nInput: ")
@@ -31,16 +33,16 @@ while True:
     match userInput:
         case '1':
             print("You have selected:\nDoes Danceability increase over the years?")
-            year_dance()
+            q1()
             plt.show()
         case '2':
-            print("You have selected:\nDoes Time Signatures affect the Popularity of a song?")
-            time_pop()
+            print("You have selected:\nAre certain time signatures more prominent in popular songs?")
+            q2()
             plt.show()
         case '3':
             print("You have selected:\nView Both")
-            year_dance()
-            time_pop()
+            q1()
+            q2()
             plt.show()
         case 'Q':
             print("Quit Program")

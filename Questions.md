@@ -1,5 +1,5 @@
 Does danceability increase over the years? - Aaron
-Does Time Signatures affect the Popularity of a song? - Aaron
+Are certain time signatures more prominent in popular songs? - Aaron
 
 Has popularity increased over time? - Cam
 Has tempo increased over time? - Cam
