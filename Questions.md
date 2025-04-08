@@ -2,9 +2,9 @@ Does danceability increase over the years? - Aaron
 
 Does type of genre increase popularity of a song? Cam
 
-Are some older songs still popular today? - Harry
+Are some older songs still popular today?
 
-Were certain genres more popular at certain times?
+Were certain genres more popular at certain times? - Harry
 
 Does Time Signatures affect the Popularity of a song? - Aaron
 

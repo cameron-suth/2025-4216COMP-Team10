@@ -23,7 +23,7 @@ while True:
             from Aaron import Aaron
         case '3':
             print("You have chosen Harry")
-            from Harry import 
+            from Harry import Harry
         case '4':
             print("You have chosen Reece")
             from Reece import reece
