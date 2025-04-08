@@ -15,7 +15,7 @@ font2 = {'family':'serif','color':'black','size':12}
 # Functions for the creation of the graphs
 
 def energylive():
-    fig, ax = plt.subplots(figsize=(8, 6)) #sets the size of the generated screen
+    fig, ax = plt.subplots(figsize=(8, 6), facecolor="pink") #sets the size of the generated screen
     ax.scatter(table_energy, table_concert, s=20) #scatters the variables selected as a size defined by s
     plt.title("Is a higher energy song more likely to be played at a live event?", fontdict = font1) 
     plt.ylabel('Liveness', fontdict = font2)
@@ -23,7 +23,7 @@ def energylive():
     plt.show()
 
 def longlive():
-    fig, ax = plt.subplots(figsize=(8, 6)) #sets the size of the generated screen
+    fig, ax = plt.subplots(figsize=(8, 6), facecolor="pink") #sets the size of the generated screen
     ax.scatter(table_energy, table_length, s=20) #scatters the variables selected as a size defined by s
     plt.title("Does a longer song affect the chance it being played live?", fontdict = font1)
     plt.ylabel('Liveness', fontdict = font2)
