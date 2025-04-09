@@ -8,7 +8,7 @@ def q1():
     table_release_year = excel.track_album_release_year
     table_popularity = excel.track_popularity
     fig, ax = plt.subplots(figsize=(8, 6), facecolor="pink", layout="constrained")
-    ax.bar(table_release_year, table_popularity)
+    ax.scatter(table_release_year, table_popularity)
     plt.title("Has music popularity increased over time?")
     plt.ylabel('Popularity')
     plt.xlabel('Release Year')
