@@ -16,7 +16,7 @@ def yearDance():
 
 def timePop():
     fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
-    ax.barh(table_time, table_popular)
+    ax.bar(table_time, table_popular)
     plt.title("Are certain time signatures more prominent in popular songs?")
     plt.xlabel("Time Signature")
     plt.ylabel("Popularity")
