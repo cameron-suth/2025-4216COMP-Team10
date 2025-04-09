@@ -8,8 +8,9 @@ table_year = excel.track_album_release_year
 table_danceability = excel.danceability
 
 def yearDance():
+    plt.style.use("_mpl-gallery")
     fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
-    ax.bar(table_year, table_danceability)
+    ax.stem(table_year, table_danceability)
     plt.title("Does Danceability increase over the years?")
     plt.xlabel("Release Year")
     plt.ylabel("Danceability")
