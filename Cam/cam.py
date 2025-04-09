@@ -16,7 +16,7 @@ def q2():
     table_release_year = excel.track_album_release_year
     table_tempo = excel.tempo
     fig, ax = plt.subplots(figsize=(8, 6), facecolor="pink", layout="constrained")
-    ax.bar(table_release_year, table_tempo, alpha=0.3)
+    ax.bar(table_release_year, table_tempo, alpha=0.15)
     plt.title("Has music tempo increased over time?")
     plt.ylabel('Tempo')
     plt.xlabel('Release Year')
