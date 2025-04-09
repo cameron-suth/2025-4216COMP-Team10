@@ -7,16 +7,16 @@ table_time = excel.time_signature
 table_year = excel.track_album_release_year
 table_danceability = excel.danceability
 
-def year_dance():
+def yearDance():
     fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
     ax.bar(table_year, table_danceability)
     plt.title("Does Danceability increase over the years?")
     plt.xlabel("Release Year")
     plt.ylabel("Danceability")
 
-def time_pop():
+def timePop():
     fig, ax = plt.subplots(figsize = (8, 6), layout="constrained", facecolor = "pink")
-    ax.bar(table_time, table_popular)
+    ax.barh(table_time, table_popular)
     plt.title("Are certain time signatures more prominent in popular songs?")
     plt.xlabel("Time Signature")
     plt.ylabel("Popularity")
@@ -32,16 +32,16 @@ while True:
     match userInput:
         case '1':
             print("You have selected:\nDoes Danceability increase over the years?")
-            year_dance()
+            yearDance()
             plt.show()
         case '2':
             print("You have selected:\nAre certain time signatures more prominent in popular songs?")
-            time_pop()
+            timePop()
             plt.show()
         case '3':
             print("You have selected:\nView Both")
-            year_dance()
-            time_pop()
+            yearDance()
+            timePop()
             plt.show()
         case 'Q':
             print("Return to Main Menu")
