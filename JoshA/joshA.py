@@ -4,8 +4,6 @@
 import matplotlib.pyplot as plt
 #This handles the data set
 import pandas as pd
-#handles large data arrays
-import numpy as np
 #########################################################
 #This imports the dataset, so python knows what we are reading from
 excel = pd.read_csv("Spotify_dataset.csv")
