@@ -26,7 +26,7 @@ while True:
     print("1. Does danceability increase over the year?")
     print("2. Are certain time signatures more prominent in popular songs?")
     print("3. View both")
-    print("Q. Quit Program")
+    print("Q. Return to Main Menu")
     userInput = input("Enter the menu number for the visuallisation/records you want to view\nInput: ")
     
     match userInput:
