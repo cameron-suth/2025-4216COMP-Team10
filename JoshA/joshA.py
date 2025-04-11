@@ -4,8 +4,6 @@
 import matplotlib.pyplot as plt
 #This handles the data set
 import pandas as pd
-#handles large data arrays
-import numpy as np
 #########################################################
 #This imports the dataset, so python knows what we are reading from
 excel = pd.read_csv("Spotify_dataset.csv")
@@ -18,7 +16,7 @@ def acousticPop():
     #Constrained ensures that the graph includes lables and a title
     fig, ax = plt.subplots(figsize=(8, 6), layout="constrained", facecolor="pink")
     #This plots acousticness along the X axis and Popularity on the Y. The s is the size of the points on the graph
-    ax.scatter(table_acousticness, table_popularity, s=30)
+    ax.scatter(table_acousticness, table_popularity, s=15)
     #Labels and Title
     plt.xlabel("Acousticness")
     plt.ylabel("Popularity")
@@ -34,7 +32,7 @@ def speechyPop():
     #Constrained ensures that the graph includes lables and a title
     fig, ax = plt.subplots(figsize=(8, 6), layout="constrained", facecolor="pink")
     #This plots acousticness along the X axis and Popularity on the Y. The s is the size of the points on the graph
-    ax.scatter(table_speechiness, table_popularity, s=30)
+    ax.scatter(table_speechiness, table_popularity, s=15)
     #Lables and Title
     plt.xlabel("Speechiness")
     plt.ylabel("Popularity")
